@@ -91,6 +91,7 @@
   function preloadScripts(e) { for (var t = 0; t < e.length; t++) { var o = new XMLHttpRequest; o.open("GET", e[t], !1), o.send(""), scriptCode += o.responseText + "\n" } } 
   
   window.midExploit = function () { preloadScripts(["exploit.js"], go) }, 
+  
   window.postExploit = function () { document.getElementById("myProgress").remove(), mymenu.style.display = "block", document.getElementById("progress").innerHTML = "Processo de <font style='color:#ee596f'>exploração do kernel e ativação do Goldhen</font>.", setTimeout(function () { eval.call(window, scriptCode) }, 2e3), load_exploit() }
   </script>
   
