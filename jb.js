@@ -4,7 +4,7 @@ function jailbreak(){
   document.getElementById("progress").innerHTML="Processo de <font style='color:#ee596f'>exploração do kernel e ativação do Goldhen</font>.";
   var tl = 0;
   var downloadTimer = setInterval(function(){
-    if(tl>180){fim()};
+    if(tl>179){fim()};
     document.getElementById("msgs").innerHTML = "<br>Clique&nbsp;&nbsp;"+"<a href=\"#\" onclick=\"cd='true'; return false\"><font color=\"#6089f6\"><b>AQUI</b></font></a>"+"&nbsp;&nbsp;para executar a <font style='color:#ee596f'>exploração do kernel imediatamente</font>.<br><br>Tempo após exploração do webkit: <font style='color:#ee596f'>" + tl + "</font> segundos.<br>Recomenda-se aguardar <font style='color:#ee596f'>120</font> segundos.<br><br><br>A exploração do kernel será executado automaticamente em 180s.<br>(<font style='color:#ee596f'>RISCO DE KERNEL PANIC</font>)<br><br><font style='font-size:19px'>Obs.: Se travar nesta tela, mas ativar o goldhen, <font style='color:#ee596f'>saia usando o botão PS</font>.";
     tl += 1;
     if(cd){fim()};
