@@ -4,7 +4,7 @@ function jailbreak(){
   document.getElementById("progress").innerHTML="Processo de <font style='color:#ee596f'>exploração do kernel e ativação do Goldhen</font>.";
   var tl = 0;
   var downloadTimer = setInterval(function(){
-    document.getElementById("msgs").innerHTML = "<br><br>Clique "+"<a href=\"#\" id=aqui onclick=\"fim(); return false\"><font color=\"#ee596f\">Iniciar</font></a>"+"para executar a <font style='color:#ee596f'>exploração do kernel imediatamente</font>.<br><br>Tempo após exploração do webkit: <font style='color:#ee596f'>" + tl + "</font> segundos<br><font style='color:#ee596f'>Recomenda-se aguardar 120 segundos</font>.<br><br>(RISCO DE KERNEL PANIC)</font><br><br><font style='font-size:19px'>Obs.: Se travar nesta tela, mas ativar o goldhen, <font style='color:#ee596f'>saia usando o botão PS</font>.";
+    document.getElementById("msgs").innerHTML = "<br><br>Clique "+"<a href=\"#\" onclick=\"fim(); return false\"><font color=\"#ee596f\"><b> AQUI </b></font></a>"+" para executar a <font style='color:#ee596f'>exploração do kernel imediatamente</font>.<br><br>Tempo após exploração do webkit: <font style='color:#ee596f'>" + tl + "</font> segundos<br><font style='color:#ee596f'>Recomenda-se aguardar 120 segundos</font>.<br><br>(RISCO DE KERNEL PANIC)</font><br><br><font style='font-size:19px'>Obs.: Se travar nesta tela, mas ativar o goldhen, <font style='color:#ee596f'>saia usando o botão PS</font>.";
     tl += 1;
     if(tl==22){fim()}
     function fim(){
