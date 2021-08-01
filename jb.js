@@ -13,9 +13,9 @@ function jailbreak(){
     if(cd){fim()};
 	
     function fim(){
-      clearInterval(downloadTimer);
       document.getElementById("msgs").innerHTML = "<br><br><br>Agora, <font style='color:#ee596f'>executando</font> a exploração do kernel.<br><br><font style='color:#ee596f'>RISCO DE KERNEL PANIC!!!</font>";
-      setTimeout(function(){KP();}, 2000);	  
+      setTimeout(function(){clearInterval(downloadTimer);}, 100);
+      setTimeout(function(){KP();}, 1000);	  
     }
   }, 1000);
   
