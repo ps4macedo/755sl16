@@ -1,11 +1,12 @@
-function jailbreak(){var c=new Uint32Array(482118),t=read_ptr_at(addrof(c)+16);
-  document.getElementById("progress").innerHTML="Processo de <font style='color:#ee596f'>exploração do kernel e ativação do Goldhen</font>.",
-  
-  var timeleft = 0;
+function jailbreak(){
+  var c=new Uint32Array(482118),t=read_ptr_at(addrof(c)+16);
+
+  document.getElementById("progress").innerHTML="Processo de <font style='color:#ee596f'>exploração do kernel e ativação do Goldhen</font>.";
+  var tl = 0;
   var downloadTimer = setInterval(function(){
-    document.getElementById("msgs").innerHTML = "<br><br>Clique "+"<a href=\"#\" id=aqui onclick=\"fim(); return false\"><font color=\"#ee596f\">Iniciar</font></a>"+"para executar a <font style='color:#ee596f'>exploração do kernel imediatamente</font>.<br><br>Tempo após exploração do webkit: <font style='color:#ee596f'>" + timeleft + "</font> segundos<br><font style='color:#ee596f'>Recomenda-se aguardar 120 segundos</font>.<br><br>(RISCO DE KERNEL PANIC)</font><br><br><font style='font-size:19px'>Obs.: Se travar nesta tela, mas ativar o goldhen, <font style='color:#ee596f'>saia usando o botão PS</font>.";
-    timeleft += 1;
-    if(timeleft==22){fim()}
+    document.getElementById("msgs").innerHTML = "<br><br>Clique "+"<a href=\"#\" id=aqui onclick=\"fim(); return false\"><font color=\"#ee596f\">Iniciar</font></a>"+"para executar a <font style='color:#ee596f'>exploração do kernel imediatamente</font>.<br><br>Tempo após exploração do webkit: <font style='color:#ee596f'>" + tl + "</font> segundos<br><font style='color:#ee596f'>Recomenda-se aguardar 120 segundos</font>.<br><br>(RISCO DE KERNEL PANIC)</font><br><br><font style='font-size:19px'>Obs.: Se travar nesta tela, mas ativar o goldhen, <font style='color:#ee596f'>saia usando o botão PS</font>.";
+    tl += 1;
+    if(tl==22){fim()}
     function fim(){
       clearInterval(downloadTimer);
       document.getElementById("msgs").innerHTML = "<br><br><br>Agora, <font style='color:#ee596f'>executando</font> a exploração do kernel.<br><br><font style='color:#ee596f'>RISCO DE KERNEL PANIC!!!</font>";
